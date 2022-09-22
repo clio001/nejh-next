@@ -1,26 +1,65 @@
-html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.grid-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  color: #333;
+  display: flex;
+
+  justify-content: center;
+  background: url("https://static.wixstatic.com/media/bfb402ab0f4248c7a9af74f382104f88.jpg/v1/fill/w_1425,h_763,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bfb402ab0f4248c7a9af74f382104f88.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-* {
-  box-sizing: border-box;
+.page-container {
+  width: 75vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.item-container {
+  width: 90%;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.item-image {
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.item-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item-container-text-sidebar {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.item-text {
+  max-width: 50vw;
+}
+
+.item-sidebar {
+  max-width: 20vw;
+  margin-left: 1.5rem;
+}
+
+.item-sidebar-heading {
+  color: #91a68d;
 }

@@ -48,7 +48,6 @@ function Navbar() {
           variant="contained"
           className={styles.button}
           onClick={() => setOpenPanel(true)}
-          color="secondary"
         >
           Browse
         </Button>

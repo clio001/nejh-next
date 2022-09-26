@@ -1,12 +1,65 @@
 [
   {
+    "id": 0,
     "title": "Federal Power Act",
     "creator": "United States Congress",
     "createdAt": "June 10, 1920",
     "year": "1920",
+    "editedBy": "Mark A. Allen",
+    "editedAt": "2021",
+    "citation": "U.S. Statutes at Large, Vol. 41, Part 1, Chap. 285, pp. 1063-1077. “An Act To create a Federal Power Commission; to provide for the improvement of navigation; the development of water power; the use of the public lands in relation thereto, and to repeal section 18 of the River and Harbor Appropriation Act, approved August 8, 1917, and for other purposes.” H.R. 3184, Public Act No. 280. From “The Evolution of the Conservation Movement, 1850-1920.” Library of Congress. Accessed September 20, 2021. http://memory.loc.gov/cgi-bin/query/r?ammem/consrvbib:@FIELD(NUMBER(vl037)).",
+    "type": "Act",
+    "period": "Interwar Period",
+    "place": ["Washington D.C."],
+    "theme": ["Environmental History", "Political History"],
+    "imageUrl": "/USCapitol1906.jpeg",
     "readings": [
-      "Foner, Eric. Give Me Liberty! Volume 2, 3rd ed. New York, NY: W. W. Norton, 2011."
+      "Foley, Bradley R., and Robert M. Calhoon. “Woodrow Wilson and Political Moderation.” The Journal of Presbyterian History 85, no. 2 (2007): 137–50.",
+      "Foner, Eric. Give Me Liberty! Volume 2, 3rd ed. New York, NY: W. W. Norton, 2011.",
+      "Kuzmiak, D. T. “The American Environmental Movement.” The Geographical Journal 157, no. 3 (1991): 265-278.",
+      "Moler, Elizabeth, David Ward, Robert Platt, Sherman Poland, and David Benkin. “Review of A Salute: 75 Years for the FPC and FERC.” Energy Law Journal 18, no. 2 (1995): 293-297.",
+      "Moran, Emilio F., Maria Claudia Lopez, Nathan Moore, Norbert Müller, and David W. Hyndman.  “Sustainable Hydropower in the 21st Century.” Proceedings of the National Academy of Sciences of the United States of America 115, no. 47 (2018): 11891–11898.",
+      "Nash, Roderick Frazier. Wilderness and the American Mind, 5th ed. New Haven: Yale University Press, 2014 [1967]."
     ],
     "body": "The boom of the Second Industrial Revolution in America from 1870 through to 1920, markedly transformed the ways Americans related to the environment, from how they used it and worked with it to how they thought about it. During this fifty-year period, employment in American Manufacturing grew to 4.5 times its original force, from 2.5 million Americans employed to roughly 11.5 million, bringing with it an increase in labor power, and a demand for materials and energy as well. Public sentiments on nature and the environment of America also shifted in this era. Through the contributions of countless passionate Americans, including the storied writer Mark Twain, the photographer William Henry Jackson, the frontier historian Fredrick Jackson Turner, and the naturalists Anna Botsford Comstock and John Muir, conservationist thought began to take shape. These seemingly conflicting concepts of industry and nature came together in Fox River, Wisconsin on August 20, 1882, when Henry J. Rogers's Appleton Edison Light Company switched on the first ever hydroelectric generator. With an output of around fifty watts of power, and the capability of powering nearly 250 incandescent lightbulbs, its opening cemented Fox River in both industrial and environmental history. Not only was this a landmark moment for a novel use of natural resources to generate power, but it also set the stage for future adoption by the industrial sector. Similar hydro turbine generators were created to power a variety of amenities, from streetlights in Niagara, New York, to theatrical performances in Grand Rapids, Michigan."
+  },
+  {
+    "id": 1,
+    "title": "Diary of Samuel J. Gibson",
+    "creator": "Samuel J. Gibson",
+    "createdAt": "1864",
+    "year": "1864",
+    "editedBy": "Liam Michael Crowley",
+    "editedAt": "2021",
+    "citation": "Gibson, Samuel J. “Samuel J. Gibson Diary and Correspondence, 1864.” Manuscript/Mixed Material. Library of Congress. Accessed September 20, 2021. https://www.loc.gov/item/mss52410001/.",
+    "type": "Diary",
+    "period": "19th Century",
+    "place": ["Georgia"],
+    "theme": ["Civil War", "Political History"],
+    "imageUrl": "https://miro.medium.com/max/720/1*CrhkDIVawqwf0JE8NekDGw.jpeg",
+    "readings": [
+      "Sheehan-Dean, Aaron C, ed. The View from the Ground Experiences of Civil War Soldiers. Lexington, Kentucky: The University Press of Kentucky, 2007."
+    ],
+    "body": " Not only was this a landmark moment for a novel use of natural resources to generate power, but it also set the stage for future adoption by the industrial sector. Similar hydro turbine generators were created to power a variety of amenities, from streetlights in Niagara, New York, to theatrical performances in Grand Rapids, Michigan."
+  },
+
+  {
+    "id": 2,
+    "title": "First Public Address",
+    "creator": "Susan B. Anthony",
+    "createdAt": "1848",
+    "year": "1848",
+    "editedBy": "Avellaka Arvison",
+    "editedAt": "2021",
+    "citation": "Anthony, Susan B. “Image 1 of Susan B. Anthony Papers: Speeches and Writings, 1848-1895; 1848, First Public Address.” The Library of Congress. Accessed October 1, 2021. https://www.loc.gov/resource/mss11049.mss11049-006_00574_00585/?sp=1&st=text. ",
+    "type": "Speech",
+    "period": "19th Century",
+    "place": ["Seneca Falls"],
+    "theme": ["Civil Rights", "Political History"],
+    "imageUrl": "https://tile.loc.gov/storage-services/service/pnp/cph/3a50000/3a52000/3a52700/3a52783v.jpg",
+    "readings": [
+      "Sheehan-Dean, Aaron C, ed. The View from the Ground Experiences of Civil War Soldiers. Lexington, Kentucky: The University Press of Kentucky, 2007."
+    ],
+    "body": " Not only was this a landmark moment for a novel use of natural resources to generate power, but it also set the stage for future adoption by the industrial sector. Similar hydro turbine generators were created to power a variety of amenities, from streetlights in Niagara, New York, to theatrical performances in Grand Rapids, Michigan."
   }
 ]

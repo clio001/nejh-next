@@ -59,8 +59,31 @@ body {
   margin-bottom: 4rem;
 }
 
-.item-text {
+.item-text-container {
   max-width: 50vw;
+}
+
+.item-text-intro-container {
+  max-width: 50vw;
+}
+
+.item-text-intro {
+  max-width: 50vw;
+  margin-top: 1rem;
+}
+
+.item-text-para-container {
+  max-width: 46vw;
+  padding: 2rem;
+  background-color: #eee;
+
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.item-text-para {
+  margin-top: 1rem;
 }
 
 .item-sidebar {

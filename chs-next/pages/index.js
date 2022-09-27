@@ -2,10 +2,7 @@ import { Typography, Grid, Box, Modal } from "@mui/material";
 import Footer from "../comps/Footer";
 import Navbar from "../comps/Navbar";
 import Link from "next/link";
-import doc from "../comps/docs.json" assert { type: "json" };
-import BrowserPanel from "../comps/BrowserPanel";
-import { useContext, useState } from "react";
-import { uiContext } from "../context/uiContext";
+import doc from "./items/docs.json" assert { type: "json" };
 
 export default function Home() {
   return (
@@ -42,7 +39,7 @@ export default function Home() {
             <Box className="theme-list-items">
               {doc.map((item, i) => {
                 return (
-                  <Link href={`/${item.id}`} key={i}>
+                  <Link href={`/items/${item.id}`} key={i}>
                     <a>
                       <img className="list-image" src={item.imageUrl} />
                     </a>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import Navbar from "../comps/Navbar";
-import Footer from "../comps/Footer";
-import doc from "../comps/docs.json" assert { type: "json" };
+import Navbar from "../../comps/Navbar";
+import Footer from "../../comps/Footer";
+import doc from "./docs.json" assert { type: "json" };
 import PrintIcon from "@mui/icons-material/Print";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import ShareIcon from "@mui/icons-material/Share";
@@ -46,21 +46,61 @@ function SingleItem({ doc }) {
               {doc.creator}, {doc.createdAt}
             </Typography>
             <Box className="item-container-text-sidebar">
-              <Box>
-                <Typography className="item-text">{doc.body}</Typography>
+              <Box className="item-text-container">
+                <Box className="item-text-intro-container">
+                  {" "}
+                  <Typography variant="h5" color="primary">
+                    Introduction
+                  </Typography>
+                  <Box className="item-text-intro">
+                    {" "}
+                    {doc.body.intro.map((para, i) => {
+                      return (
+                        <Typography
+                          key={i}
+                          sx={{ mb: "1rem", fontStyle: "italic" }}
+                        >
+                          {para}
+                        </Typography>
+                      );
+                    })}
+                  </Box>
+                </Box>
+                <Box className="item-text-para-container">
+                  {" "}
+                  <Typography variant="h5" color="primary">
+                    Primary source
+                  </Typography>
+                  <Box className="item-text-para">
+                    {doc.body.paragraphs.length > 0
+                      ? doc.body.paragraphs.map((para, i) => {
+                          return (
+                            <Typography key={i} sx={{ mb: "1rem" }}>
+                              {para}
+                            </Typography>
+                          );
+                        })
+                      : doc.body.poem.map((element, i) => {
+                          return (
+                            <Box key={i} mb={2}>
+                              {element.stanza.map((line, y) => {
+                                return <Typography key={y}>{line}</Typography>;
+                              })}
+                            </Box>
+                          );
+                        })}
+                  </Box>
+                </Box>
+
+                <Box mb={3}>
+                  <Typography variant="h5" color="primary">
+                    How to cite
+                  </Typography>
+                  <Typography sx={{ mt: "1rem" }}>{doc.citation}</Typography>
+                </Box>
               </Box>
               <Box>
                 <Box className="item-sidebar">
-                  <Box mb={3}>
-                    <Typography
-                      variant="subtitle1"
-                      fontWeight="medium"
-                      color="#91a68d"
-                    >
-                      How to cite
-                    </Typography>
-                    <Typography variant="body2">{doc.citation}</Typography>
-                  </Box>
                   <Box mb={3}>
                     <Typography
                       variant="subtitle1"

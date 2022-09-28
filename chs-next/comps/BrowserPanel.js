@@ -1,11 +1,26 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
+import { Box, Typography, Button } from "@mui/material";
+import React, { useContext } from "react";
 import styles from "../styles/Navbar.module.css";
+import CloseIcon from "@mui/icons-material/Close";
+import { uiContext } from "../context/uiContext";
 
 function BrowserPanel() {
+  const { setOpenPanel } = useContext(uiContext);
   return (
     <>
       <Box className={styles.panel_container}>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "flex-end",
+          }}
+        >
+          <Button onClick={() => setOpenPanel(false)}>
+            <CloseIcon size="small" />
+          </Button>
+        </Box>
         <Box className={styles.panel_item}>
           <Typography variant="h6" color="primary" sx={{ fontWeight: "bold" }}>
             THEMES

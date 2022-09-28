@@ -55,6 +55,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+
   margin-top: 1rem;
   margin-bottom: 4rem;
 }
@@ -76,7 +77,6 @@ body {
   max-width: 46vw;
   padding: 2rem;
   background-color: #eee;
-
   border-radius: 10px;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -104,12 +104,12 @@ body {
 }
 
 .feature-item-primary {
-  width: 50vw;
+  width: 42vw;
   margin-right: 2rem;
 }
 
 .image-primary {
-  width: 47vw;
+  width: 40vw;
   border-radius: 10px;
   border: solid 2px #91a68d;
 }
@@ -125,7 +125,7 @@ body {
 }
 
 .image-secondary {
-  width: 22vw;
+  width: 18vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,7 +134,7 @@ body {
 }
 
 .image-tertiary {
-  width: 22vw;
+  width: 18vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,10 +158,7 @@ body {
 
 .list-image {
   border-radius: 15px;
-  height: 150px;
-  width: 250px;
+  height: 125px;
+  width: 200px;
   padding: 0.5rem;
-}
-
-.panel-modal {
 }

@@ -41,7 +41,10 @@ export default function Home() {
                 return (
                   <Link href={`/items/${item.id}`} key={i}>
                     <a>
-                      <img className="list-image" src={item.imageUrl} />
+                      <Box
+                        className="list-image"
+                        sx={{ backgroundImage: `url(${item.imageUrl})` }}
+                      />
                     </a>
                   </Link>
                 );
@@ -53,7 +56,12 @@ export default function Home() {
               Global History
             </Typography>
             <Box className="theme-list-items">
-              <img className="list-image" src="/USCapitol1906.jpeg" />
+              <Box
+                className="list-image"
+                sx={{
+                  backgroundImage: `url(${doc[2].imageUrl})`,
+                }}
+              />
               <img className="list-image" src="/USCapitol1906.jpeg" />
               <img className="list-image" src="/USCapitol1906.jpeg" />
               <img className="list-image" src="/USCapitol1906.jpeg" />

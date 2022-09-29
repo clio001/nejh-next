@@ -45,10 +45,10 @@ function BrowserPanel() {
             TYPES
           </Typography>
           <Typography>Acts</Typography>
+          <Typography>Agreements</Typography>
+          <Typography>Books</Typography>
           <Typography>Diaries</Typography>
-          <Typography>Letters</Typography>
-          <Typography>Maps</Typography>
-          <Typography>Photographs</Typography>
+          <Typography>Speeches</Typography>
         </Box>
         <Box className={styles.panel_item}>
           <Typography variant="h6" color="primary" sx={{ fontWeight: "bold" }}>

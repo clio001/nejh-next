@@ -4,7 +4,7 @@
   padding: 0.1rem;
   align-items: center;
 
-  /* position: fixed; */
+  position: fixed;
   background-color: white;
   width: 100vw;
 }

@@ -99,50 +99,51 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .feature-item-primary {
   width: 42vw;
+  height: 50vh;
   margin-right: 2rem;
 }
 
-.image-primary {
-  width: 40vw;
+.feature-first {
+  min-width: 302px;
+
+  min-height: 50vh;
   border-radius: 10px;
-  border: solid 2px #91a68d;
+  background-size: cover;
+  transition: ease-in-out 0.2s;
 }
 
-.image-primary:hover {
-  opacity: 0.7;
+.feature-item-primary:hover {
+  scale: 1.05;
 }
 
 .feature-item-secondary {
+  min-width: 302px;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.image-secondary {
-  width: 18vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.feature-sec {
+  height: 24vh;
+  width: 100%;
+  background-size: cover;
+  transition: ease-in-out 0.1s;
   border-radius: 10px;
-  border: solid 2px #91a68d;
 }
 
-.image-tertiary {
-  width: 18vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
-  border: solid 2px #91a68d;
+.feature-sec:hover {
+  scale: 1.1;
 }
 
 .theme-container {
   width: 75vw;
+  margin-bottom: 3rem;
 }
 
 .theme-list {
@@ -156,8 +157,8 @@ body {
 }
 
 .list-image {
-  width: 200px;
-  height: 125px;
+  width: 300px;
+  height: 175px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0.5rem;

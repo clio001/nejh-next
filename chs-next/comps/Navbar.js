@@ -26,13 +26,25 @@ function Navbar() {
             />
           </a>
         </Link>
-        <Typography variant="body1" ml={1} sx={{ fontFamily: "Palatino" }}>
+        <Typography
+          variant="body1"
+          ml={1}
+          mr={3}
+          sx={{ fontFamily: "Palatino" }}
+        >
           CITIZEN
           <br />
           HISTORIAN
           <br />
           SOURCEBOOK
         </Typography>{" "}
+        <Button
+          variant="contained"
+          className={styles.button}
+          onClick={() => setOpenPanel(true)}
+        >
+          Browse
+        </Button>{" "}
         <TextField
           size="small"
           variant="outlined"
@@ -40,17 +52,12 @@ function Navbar() {
           sx={{
             backgroundColor: "#eee",
             width: "22rem",
-            mr: "3rem",
+            mr: "4rem",
             ml: "4rem",
+            mt: "0.5rem",
+            mb: "0.5rem",
           }}
         />
-        <Button
-          variant="contained"
-          className={styles.button}
-          onClick={() => setOpenPanel(true)}
-        >
-          Browse
-        </Button>
       </Box>
       <Drawer
         anchor="top"

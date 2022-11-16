@@ -3,6 +3,8 @@ import Footer from "../comps/Footer";
 import Navbar from "../comps/Navbar";
 import Link from "next/link";
 import doc from "./items/docs.json" assert { type: "json" };
+import articles from "./items/articles.json" assert { type: "json" };
+import blogs from "./items/blogs.json" assert { type: "json" };
 import { useContext, useState } from "react";
 import { uiContext } from "../context/uiContext";
 
@@ -13,9 +15,15 @@ export default function Home() {
       <Navbar />
 
       <Grid container className="grid-container">
+        {" "}
         <Box className="page-container-index">
           <Box className="feature-container">
             <Box className="feature-item-primary">
+              <Link href="/LandingPage">
+                <a>
+                  <Typography>Link</Typography>
+                </a>
+              </Link>
               <Box
                 className="feature-first"
                 sx={{
@@ -68,6 +76,46 @@ export default function Home() {
                         className="list-image"
                         sx={{ backgroundImage: `url(${item.imageUrl})` }}
                       />
+                    </a>
+                  </Link>
+                );
+              })}
+            </Box>
+          </Box>
+        </Box>
+        <Box className="theme-container">
+          <Box className="theme-list">
+            <Typography variant="h5" color="secondary">
+              Recent articles
+            </Typography>
+            <Box className="theme-list-items">
+              {articles.map((article, i) => {
+                return (
+                  <Link href={`/items/${article.id}`} key={i}>
+                    <a>
+                      <Box className="list-image" sx={{ bgColor: "#fff" }}>
+                        `${article.title}`
+                      </Box>
+                    </a>
+                  </Link>
+                );
+              })}
+            </Box>
+          </Box>
+        </Box>
+        <Box className="theme-container">
+          <Box className="theme-list">
+            <Typography variant="h5" color="secondary">
+              Recent blogs
+            </Typography>
+            <Box className="theme-list-items">
+              {blogs.map((blog, i) => {
+                return (
+                  <Link href={`/items/${blog.id}`} key={i}>
+                    <a>
+                      <Box className="list-image" sx={{ bgColor: "#fff" }}>
+                        `${blog.title}`
+                      </Box>
                     </a>
                   </Link>
                 );

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "title": "title one",
+    "author": "author one",
+    "articleUrl": "url",
+    "imageUrl": "imageUrl"
+  },
+  {
+    "id": 1,
+    "title": "title two",
+    "author": "author one",
+    "articleUrl": "url",
+    "imageUrl": "imageUrl"
+  },
+  {
+    "id": 2,
+    "title": "title three",
+    "author": "author one",
+    "articleUrl": "url",
+    "imageUrl": "imageUrl"
+  },
+  {
+    "id": 3,
+    "title": "title four",
+    "author": "author one",
+    "articleUrl": "url",
+    "imageUrl": "imageUrl"
+  }
+]

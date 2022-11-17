@@ -19,17 +19,14 @@ export default function Home() {
         <Box className="page-container-index">
           <Box className="feature-container">
             <Box className="feature-item-primary">
-              <Link href="/LandingPage">
-                <a>
-                  <Typography>Link</Typography>
-                </a>
-              </Link>
               <Box
                 className="feature-first"
                 sx={{
                   backgroundImage: `url(${doc[3].imageUrl})`,
                 }}
-              ></Box>
+              >
+                {" "}
+              </Box>
               <Box
                 sx={{
                   marginTop: "-40px",

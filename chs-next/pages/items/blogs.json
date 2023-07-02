@@ -4,14 +4,14 @@
     "title": "title one",
     "author": "author one",
     "blogUrl": "url",
-    "imageUrl": "imageUrl"
+    "imageUrl": "https://images-vod.wixmp.com/725a0356-91b6-40bd-8525-6aa155dc6525/images/9748933a78f240e19aef5732abdc490cf000/v1/fill/w_211,h_118,q_85,usm_0.66_1.00_0.01,enc_auto/file.webp"
   },
   {
     "id": 1,
     "title": "title two",
     "author": "author one",
     "blogUrl": "url",
-    "imageUrl": "imageUrl"
+    "imageUrl": "https://images-vod.wixmp.com/725a0356-91b6-40bd-8525-6aa155dc6525/images/bb6526e672ea411289285b6fe628e3b7f002/v1/fill/w_211,h_118,q_85,usm_0.66_1.00_0.01,enc_auto/file.webp"
   },
   {
     "id": 2,

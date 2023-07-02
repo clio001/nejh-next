@@ -62,7 +62,7 @@ export default function Home() {
         <Box className="theme-container">
           <Box className="theme-list">
             <Typography variant="h5" color="secondary">
-              Sources
+              Primary Source Documents
             </Typography>
             <Box className="theme-list-items">
               {doc.map((item, i) => {
@@ -70,7 +70,7 @@ export default function Home() {
                   <Link href={`/items/${item.id}`} key={i}>
                     <a>
                       <Box
-                        className="list-image"
+                        className="list-item"
                         sx={{ backgroundImage: `url(${item.imageUrl})` }}
                       />
                     </a>
@@ -83,15 +83,62 @@ export default function Home() {
         <Box className="theme-container">
           <Box className="theme-list">
             <Typography variant="h5" color="secondary">
-              Recent articles
+              The New England Journal of History
             </Typography>
             <Box className="theme-list-items">
               {articles.map((article, i) => {
                 return (
-                  <Link href={`/items/${article.id}`} key={i}>
-                    <a>
-                      <Box className="list-image" sx={{ bgColor: "#fff" }}>
-                        `${article.title}`
+                  <Box
+                    className="list-item"
+                    sx={{
+                      bgColor: "secondary",
+                    }}
+                  >
+                    <Link href={`${article.articleUrl}`} key={i}>
+                      <a>
+                        <Typography
+                          sx={{ textDecoration: "none", fontWeight: "bold" }}
+                        >
+                          {article.title}
+                        </Typography>
+                      </a>
+                    </Link>
+
+                    <Typography>{article.author}</Typography>
+                    <br></br>
+                    <Typography sx={{ fontStyle: "italic" }}>
+                      {article.journal}
+                    </Typography>
+                    <Typography>
+                      Vol. {article.volume}, Issue {article.issue},{" "}
+                      {article.year}, {article.pages}
+                    </Typography>
+                  </Box>
+                );
+              })}
+            </Box>
+          </Box>
+        </Box>
+        <Box className="theme-container">
+          <Box className="theme-list">
+            <Typography variant="h5" color="secondary">
+              History in Your Backyard
+            </Typography>
+            <Box className="theme-list-items">
+              {blogs.map((blog, i) => {
+                return (
+                  <Link href={`/items/${blog.id}`} key={i}>
+                    <a sx={{ textDecoration: "none" }}>
+                      <Box
+                        className="list-item"
+                        sx={{
+                          bgColor: "#fff",
+                          backgroundImage: `url(${blog.imageUrl})`,
+                        }}
+                      >
+                        <Typography>{blog.title}</Typography>
+
+                        <Typography>{blog.author}</Typography>
                       </Box>
                     </a>
                   </Link>
@@ -103,15 +150,17 @@ export default function Home() {
         <Box className="theme-container">
           <Box className="theme-list">
             <Typography variant="h5" color="secondary">
-              Recent blogs
+              NEJH Blog
             </Typography>
             <Box className="theme-list-items">
               {blogs.map((blog, i) => {
                 return (
                   <Link href={`/items/${blog.id}`} key={i}>
-                    <a>
-                      <Box className="list-image" sx={{ bgColor: "#fff" }}>
-                        `${blog.title}`
+                    <a sx={{ textDecoration: "none" }}>
+                      <Box className="list-item" sx={{ bgColor: "#fff" }}>
+                        <Typography>{blog.title}</Typography>
+
+                        <Typography>{blog.author}</Typography>
                       </Box>
                     </a>
                   </Link>

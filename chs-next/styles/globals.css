@@ -48,12 +48,13 @@ body {
 .item-container {
   width: 90%;
   color: #333;
+
   margin-top: 6rem;
 }
 
 .item-image {
   border-radius: 10px;
-  width: 47vw;
+  width: 40vw;
   margin-bottom: 3rem;
 }
 
@@ -65,29 +66,21 @@ body {
   margin-top: 1rem;
 }
 
-.item-container-text-sidebar {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-}
-
 .item-text-container {
-  max-width: 50vw;
+  max-width: 90%;
+  justify-content: center;
 }
 
 .item-text-intro-container {
-  max-width: 50vw;
+  margin-top: 2.5rem;
 }
 
 .item-text-intro {
-  max-width: 50vw;
   margin-top: 1rem;
 }
 
 .item-text-para-container {
-  max-width: 46vw;
+  width: 90%;
   padding: 2rem;
   background-color: #eee;
   border-radius: 10px;
@@ -97,15 +90,6 @@ body {
 
 .item-text-para {
   margin-top: 1rem;
-}
-
-.item-sidebar {
-  max-width: 20vw;
-  margin-left: 1.5rem;
-}
-
-.item-sidebar-heading {
-  color: #91a68d;
 }
 
 .feature-container {

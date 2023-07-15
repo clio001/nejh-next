@@ -12,7 +12,8 @@
 .button {
   background-color: #91a68d;
   color: #fef7de;
-  width: 7rem;
+  max-width: fit-content;
+  margin-left: 1rem;
 }
 
 .button:hover {

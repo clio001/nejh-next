@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useRouter } from "next/router";
 import {
   Typography,
   Box,
@@ -14,6 +15,7 @@ import BrowserPanel from "./BrowserPanel";
 
 function Navbar() {
   const { openPanel, setOpenPanel } = useContext(uiContext);
+  const router = useRouter();
   return (
     <div>
       <Box className={styles.navbar_container}>
@@ -41,9 +43,30 @@ function Navbar() {
         <Button
           variant="contained"
           className={styles.button}
-          onClick={() => setOpenPanel(true)}
+          onClick={() => router.push("https://www.nejh.org")}
         >
-          Browse
+          NEJH
+        </Button>
+        <Button
+          variant="contained"
+          className={styles.button}
+          onClick={() => router.push("https://www.nejh.org/current-issue")}
+        >
+          Current Issue
+        </Button>{" "}
+        <Button
+          variant="contained"
+          className={styles.button}
+          onClick={() => router.push("https://www.nejh.org/subscribe")}
+        >
+          Subscribe
+        </Button>{" "}
+        <Button
+          variant="contained"
+          className={styles.button}
+          onClick={() => router.push("https://www.nejh.org/citizen-historians")}
+        >
+          Citizen Historian
         </Button>{" "}
       </Box>
       <Drawer

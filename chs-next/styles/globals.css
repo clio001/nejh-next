@@ -92,6 +92,16 @@ body {
   margin-top: 1rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.link-decoration:hover {
+  text-decoration: underline;
+  color: #91a68d;
+  cursor: pointer;
+}
+
 .feature-container {
   width: 100%;
   display: flex;
@@ -163,6 +173,17 @@ body {
   margin: 0.5rem;
   text-decoration: none;
   padding: 1rem;
+  border-radius: 10px;
+  transition: ease-in-out 0.1s;
+}
+
+.list-journal-article {
+  width: 300px;
+  height: 175px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
   border-radius: 10px;
   transition: ease-in-out 0.1s;
 }

@@ -2,14 +2,17 @@ import { Typography, Grid, Box, Modal } from "@mui/material";
 import Footer from "../comps/Footer";
 import Navbar from "../comps/Navbar";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import doc from "./items/docs.json" assert { type: "json" };
 import articles from "./items/articles.json" assert { type: "json" };
 import blogs from "./items/blogs.json" assert { type: "json" };
 import { useContext, useState } from "react";
 import { uiContext } from "../context/uiContext";
+import { Router } from "next/router";
 
 export default function Home() {
   const { first, second, third } = useContext(uiContext);
+  const router = useRouter();
   return (
     <>
       <Navbar />
@@ -91,27 +94,23 @@ export default function Home() {
                   <Box
                     className="list-item"
                     sx={{
-                      bgColor: "secondary",
+                      background:
+                        "linear-gradient(90deg, rgba(254,247,222,1) 0%, rgba(255,255,255,1) 85%, rgba(145,166,141,1) 100%)",
                     }}
                   >
-                    <Link href={`${article.articleUrl}`} key={i}>
-                      <a>
-                        <Typography
-                          sx={{ textDecoration: "none", fontWeight: "bold" }}
-                        >
-                          {article.title}
-                        </Typography>
-                      </a>
-                    </Link>
-
-                    <Typography>{article.author}</Typography>
-                    <br></br>
-                    <Typography sx={{ fontStyle: "italic" }}>
-                      {article.journal}
+                    <Typography
+                      className="link-decoration"
+                      sx={{
+                        fontWeight: "bold",
+                      }}
+                      onClick={() => router.push(article.articleUrl)}
+                    >
+                      {article.title}
                     </Typography>
+
                     <Typography>
-                      Vol. {article.volume}, Issue {article.issue},{" "}
-                      {article.year}, {article.pages}
+                      {article.author}, {article.journal}, Vol. {article.volume}
+                      , Issue {article.issue}, {article.year}, {article.pages}
                     </Typography>
                   </Box>
                 );
@@ -127,21 +126,18 @@ export default function Home() {
             <Box className="theme-list-items">
               {blogs.map((blog, i) => {
                 return (
-                  <Link href={`/items/${blog.id}`} key={i}>
-                    <a sx={{ textDecoration: "none" }}>
-                      <Box
-                        className="list-item"
-                        sx={{
-                          bgColor: "#fff",
-                          backgroundImage: `url(${blog.imageUrl})`,
-                        }}
-                      >
-                        <Typography>{blog.title}</Typography>
+                  <Box
+                    className="list-item"
+                    sx={{
+                      bgColor: "#fff",
+                      backgroundImage: `url(${blog.imageUrl})`,
+                    }}
+                    onClick={() => router.push(blog.blogUrl)}
+                  >
+                    <Typography>{blog.title}</Typography>
 
-                        <Typography>{blog.author}</Typography>
-                      </Box>
-                    </a>
-                  </Link>
+                    <Typography>{blog.author}</Typography>
+                  </Box>
                 );
               })}
             </Box>
@@ -155,15 +151,15 @@ export default function Home() {
             <Box className="theme-list-items">
               {blogs.map((blog, i) => {
                 return (
-                  <Link href={`/items/${blog.id}`} key={i}>
-                    <a sx={{ textDecoration: "none" }}>
-                      <Box className="list-item" sx={{ bgColor: "#fff" }}>
-                        <Typography>{blog.title}</Typography>
+                  <Box
+                    className="list-item"
+                    sx={{ bgColor: "#fff" }}
+                    onClick={() => router.push(blog.blogUrl)}
+                  >
+                    <Typography>{blog.title}</Typography>
 
-                        <Typography>{blog.author}</Typography>
-                      </Box>
-                    </a>
-                  </Link>
+                    <Typography>{blog.author}</Typography>
+                  </Box>
                 );
               })}
             </Box>

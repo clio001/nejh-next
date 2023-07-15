@@ -64,9 +64,7 @@ export default function Home() {
         </Box>
         <Box className="theme-container">
           <Box className="theme-list">
-            <Typography variant="h5" color="secondary">
-              Primary Source Documents
-            </Typography>
+            <Typography variant="h5">Primary Source Documents</Typography>
             <Box className="theme-list-items">
               {doc.map((item, i) => {
                 return (
@@ -82,10 +80,53 @@ export default function Home() {
               })}
             </Box>
           </Box>
+        </Box>{" "}
+        <Box className="theme-container">
+          <Box className="theme-list">
+            <Typography variant="h5">History in Your Backyard</Typography>
+            <Box className="theme-list-items">
+              {blogs.map((blog, i) => {
+                return (
+                  <Box
+                    className="list-item"
+                    sx={{
+                      bgColor: "#fff",
+                      backgroundImage: `url(${blog.imageUrl})`,
+                    }}
+                    onClick={() => router.push(blog.blogUrl)}
+                  >
+                    <Typography>{blog.title}</Typography>
+
+                    <Typography>{blog.author}</Typography>
+                  </Box>
+                );
+              })}
+            </Box>
+          </Box>
         </Box>
         <Box className="theme-container">
           <Box className="theme-list">
-            <Typography variant="h5" color="secondary">
+            <Typography variant="h5">NEJH Blog</Typography>
+            <Box className="theme-list-items">
+              {blogs.map((blog, i) => {
+                return (
+                  <Box
+                    className="list-item"
+                    sx={{ bgColor: "#fff" }}
+                    onClick={() => router.push(blog.blogUrl)}
+                  >
+                    <Typography>{blog.title}</Typography>
+
+                    <Typography>{blog.author}</Typography>
+                  </Box>
+                );
+              })}
+            </Box>
+          </Box>
+        </Box>
+        <Box className="theme-container">
+          <Box className="theme-list">
+            <Typography variant="h5">
               The New England Journal of History
             </Typography>
             <Box className="theme-list-items">
@@ -112,53 +153,6 @@ export default function Home() {
                       {article.author}, {article.journal}, Vol. {article.volume}
                       , Issue {article.issue}, {article.year}, {article.pages}
                     </Typography>
-                  </Box>
-                );
-              })}
-            </Box>
-          </Box>
-        </Box>
-        <Box className="theme-container">
-          <Box className="theme-list">
-            <Typography variant="h5" color="secondary">
-              History in Your Backyard
-            </Typography>
-            <Box className="theme-list-items">
-              {blogs.map((blog, i) => {
-                return (
-                  <Box
-                    className="list-item"
-                    sx={{
-                      bgColor: "#fff",
-                      backgroundImage: `url(${blog.imageUrl})`,
-                    }}
-                    onClick={() => router.push(blog.blogUrl)}
-                  >
-                    <Typography>{blog.title}</Typography>
-
-                    <Typography>{blog.author}</Typography>
-                  </Box>
-                );
-              })}
-            </Box>
-          </Box>
-        </Box>
-        <Box className="theme-container">
-          <Box className="theme-list">
-            <Typography variant="h5" color="secondary">
-              NEJH Blog
-            </Typography>
-            <Box className="theme-list-items">
-              {blogs.map((blog, i) => {
-                return (
-                  <Box
-                    className="list-item"
-                    sx={{ bgColor: "#fff" }}
-                    onClick={() => router.push(blog.blogUrl)}
-                  >
-                    <Typography>{blog.title}</Typography>
-
-                    <Typography>{blog.author}</Typography>
                   </Box>
                 );
               })}

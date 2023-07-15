@@ -151,17 +151,21 @@ body {
 
 .theme-container {
   width: 75vw;
-  margin-bottom: 3rem;
+  border-radius: 10px;
+  background-color: #eee;
+  padding: 1rem;
+
+  margin-top: 3rem;
 }
 
 .theme-list {
-  margin-top: 2rem;
 }
 
 .theme-list-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .list-item {

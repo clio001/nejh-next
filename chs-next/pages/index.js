@@ -47,18 +47,25 @@ export default function Home() {
             </Box>
 
             <Box className="feature-item-secondary">
-              <Box
-                className="feature-sec"
-                sx={{
-                  backgroundImage: `url(${doc[6].imageUrl})`,
-                }}
-              ></Box>
-              <Box
-                className="feature-sec"
-                sx={{
-                  backgroundImage: `url(${doc[7].imageUrl})`,
-                }}
-              ></Box>
+              <Typography variant="h5" sx={{ mb: "1rem" }}>
+                About
+              </Typography>
+              <Typography variant="body1">
+                History isn't just found in textbooks, archives, and museums.
+                It's all around us. Every day we pass through historical spaces,
+                some that are clearly marked and some that are not so obvious.
+                This public history series, co-created by David Brandon Dennis
+                and R.A. Lawson and hosted by the New England Journal of History
+                aims to enlist citizen historians to harness the power of local
+                community to capture history in their proverbial backyards. You
+                need not be a professional historian to participate! With a bit
+                of research, a video camera, and passion for local history, you
+                too can join us. We invite submissions (see Call of Videos
+                below) from the public. Submissions will be reviewed and vetted
+                by NEJH editors. We look forward to hearing from you. Meanwhile
+                co-creators Dennis and Lawson will kick off the series with
+                episodes from our own backyards!{" "}
+              </Typography>
             </Box>
           </Box>
         </Box>

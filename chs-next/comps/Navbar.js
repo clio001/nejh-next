@@ -45,29 +45,6 @@ function Navbar() {
         >
           Browse
         </Button>{" "}
-        <Button
-          variant="contained"
-          className={styles.button}
-          sx={{ ml: "1rem" }}
-        >
-          {" "}
-          <Link href={"/map"}>
-            <a>MAP</a>
-          </Link>
-        </Button>
-        <TextField
-          size="small"
-          variant="outlined"
-          placeholder="Search ..."
-          sx={{
-            backgroundColor: "#eee",
-            width: "22rem",
-            mr: "4rem",
-            ml: "4rem",
-            mt: "0.5rem",
-            mb: "0.5rem",
-          }}
-        />
       </Box>
       <Drawer
         anchor="top"

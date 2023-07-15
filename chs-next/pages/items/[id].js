@@ -55,12 +55,7 @@ function SingleItem({ doc }) {
         <Box className="page-container">
           <Box className="item-container">
             <img src={doc.imageUrl} className="item-image" />
-            <Box className="item-icons">
-              <ShareIcon size="small" sx={{ ml: "0.5rem" }} />
-              <BookmarkIcon size="small" sx={{ ml: "0.5rem" }} />
-              <PictureAsPdfIcon size="small" sx={{ ml: "0.5rem" }} />
-              <PrintIcon size="small" sx={{ ml: "0.5rem" }} />
-            </Box>
+
             <Typography variant="h4">{doc.title}</Typography>
             <Typography>
               {doc.creator}, {doc.createdAt}

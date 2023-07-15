@@ -54,6 +54,7 @@ body {
 .item-image {
   border-radius: 10px;
   width: 47vw;
+  margin-bottom: 3rem;
 }
 
 .item-icons {

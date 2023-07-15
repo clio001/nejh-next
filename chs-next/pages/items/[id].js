@@ -67,13 +67,16 @@ function SingleItem({ doc }) {
                   <Typography variant="h5" color="primary">
                     Introduction
                   </Typography>
+                  <Typography variant="body2" sx={{ mt: "0.5rem" }}>
+                    Edited by {doc.editedBy} ({doc.editedAt})
+                  </Typography>
                   <Box className="item-text-intro">
                     {" "}
                     {doc.body.intro.map((para, i) => {
                       return (
                         <Typography
                           key={i}
-                          sx={{ mb: "1rem", fontStyle: "italic" }}
+                          sx={{ mb: "1rem", fontStyle: "regular" }}
                         >
                           {para}
                         </Typography>
@@ -155,40 +158,31 @@ function SingleItem({ doc }) {
                     </Box>
                     <Typography>{doc.citation}</Typography>
                   </Box>
-                </Box>
-              </Box>
-              <Box>
-                <Box className="item-sidebar">
-                  <Box mb={3}>
-                    <Typography
-                      variant="subtitle1"
-                      fontWeight="medium"
-                      color="#91a68d"
+                  <Box mb={2} mt={4}>
+                    <Divider>
+                      <Chip
+                        label="Further reading"
+                        sx={{
+                          color: "#91a68d",
+                          fontSize: "18px",
+                          backgroundColor: "#eee",
+                        }}
+                      />
+                    </Divider>
+                    <Box
+                      sx={{
+                        display: "block",
+                        mt: "2rem",
+                      }}
                     >
-                      Source details
-                    </Typography>
-                    <Typography variant="body2">
-                      Edited by {doc.editedBy} ({doc.editedAt})
-                    </Typography>
-                    <Typography variant="body2">{doc.type}</Typography>
-
-                    <Typography variant="body2">{doc.theme[0]}</Typography>
-                  </Box>
-                  <Box>
-                    <Typography
-                      variant="subtitle1"
-                      fontWeight="medium"
-                      color="#91a68d"
-                    >
-                      Further reading
-                    </Typography>
-                    {doc.readings.map((item, i) => {
-                      return (
-                        <Typography key={i} variant="body2" mb={1}>
-                          {item}
-                        </Typography>
-                      );
-                    })}
+                      {doc.readings.map((item, i) => {
+                        return (
+                          <Typography key={i} variant="body2" mb={1}>
+                            {item}
+                          </Typography>
+                        );
+                      })}
+                    </Box>
                   </Box>
                 </Box>
               </Box>

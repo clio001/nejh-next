@@ -188,12 +188,32 @@ body {
 .list-journal-article {
   width: 300px;
   height: 175px;
-
   background-repeat: no-repeat;
   background-size: cover;
-
   border-radius: 10px;
   transition: ease-in-out 0.1s;
+}
+
+.list-item-backyard-image {
+  display: flex;
+  align-items: flex-end;
+  min-width: 300px;
+  height: 175px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0.5rem;
+  text-decoration: none;
+
+  border-radius: 10px 10px 0 0;
+  transition: ease-in-out 0.1s;
+}
+
+.list-item-backyard-text {
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  width: 300px;
 }
 
 .list-item:hover {

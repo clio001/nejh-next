@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import doc from "./items/docs.json" assert { type: "json" };
 import articles from "./items/articles.json" assert { type: "json" };
 import blogs from "./items/blogs.json" assert { type: "json" };
+import backyard from "./items/backyard.json" assert { type: "json" };
 import { useContext, useState } from "react";
 import { uiContext } from "../context/uiContext";
 import { Router } from "next/router";
@@ -92,20 +93,26 @@ export default function Home() {
           <Box className="theme-list">
             <Typography variant="h5">History in Your Backyard</Typography>
             <Box className="theme-list-items">
-              {blogs.map((blog, i) => {
+              {backyard.map((backyard, i) => {
                 return (
                   <Box
-                    className="list-item"
-                    key={i}
                     sx={{
-                      bgColor: "#fff",
-                      backgroundImage: `url(${blog.imageUrl})`,
+                      display: "flex",
+                      flexDirection: "column",
+                      margin: "0.5rem",
                     }}
-                    onClick={() => router.push(blog.blogUrl)}
                   >
-                    <Typography>{blog.title}</Typography>
-
-                    <Typography>{blog.author}</Typography>
+                    <Box
+                      className="list-item-backyard-image"
+                      key={i}
+                      sx={{
+                        backgroundImage: `url(${backyard.imageUrl})`,
+                      }}
+                      onClick={() => router.push(backyard.blogUrl)}
+                    ></Box>{" "}
+                    <Box className="list-item-backyard-text">
+                      <Typography variant="body1">{backyard.title}</Typography>
+                    </Box>
                   </Box>
                 );
               })}
@@ -119,14 +126,24 @@ export default function Home() {
               {blogs.map((blog, i) => {
                 return (
                   <Box
-                    className="list-item"
-                    key={i}
-                    sx={{ bgColor: "#fff" }}
-                    onClick={() => router.push(blog.blogUrl)}
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      margin: "0.5rem",
+                    }}
                   >
-                    <Typography>{blog.title}</Typography>
-
-                    <Typography>{blog.author}</Typography>
+                    <Box
+                      className="list-item-backyard-image"
+                      key={i}
+                      sx={{
+                        backgroundImage: `url(${blog.imageUrl})`,
+                      }}
+                      onClick={() => router.push(blog.blogUrl)}
+                    ></Box>{" "}
+                    <Box className="list-item-backyard-text">
+                      <Typography>{blog.title}</Typography>
+                      <Typography>by {blog.author}</Typography>
+                    </Box>
                   </Box>
                 );
               })}

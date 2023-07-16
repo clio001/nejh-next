@@ -110,16 +110,15 @@ body {
   margin-top: 2.5rem;
 }
 
-.feature-item-primary {
+.feature-item {
   width: 42vw;
   height: 50vh;
   margin-right: 2rem;
 }
 
-.feature-first {
-  min-width: 302px;
-
-  height: 30rem;
+.feature-image {
+  height: 50vh;
+  min-width: 300px;
   border-radius: 10px;
   background-size: cover;
   transition: ease-in-out 0.2s;
@@ -129,12 +128,13 @@ body {
   scale: 1.05;
 }
 
-.feature-item-secondary {
-  height: 28rem;
-  width: 20vw;
+.feature-item-about {
+  height: fit-content;
+  max-width: 30%;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-
+  flex-grow: 1;
   background-color: #eee;
   border-radius: 10px;
   padding: 20px;
@@ -170,6 +170,7 @@ body {
   flex-wrap: wrap;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  width: 75vw;
 }
 
 .list-item {
@@ -216,7 +217,7 @@ body {
   background-size: cover;
   margin-top: 0.5rem;
   text-decoration: none;
-
+  box-shadow: 5px 0px 10px darkgrey;
   border-radius: 10px 10px 0 0;
   transition: ease-in-out 0.1s;
 }
@@ -227,6 +228,7 @@ body {
   border-radius: 0 0 10px 10px;
   width: 300px;
   padding-bottom: 1rem;
+  box-shadow: 5px 5px 10px darkgrey;
 }
 
 .list-item:hover {

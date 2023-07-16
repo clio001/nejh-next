@@ -48,9 +48,9 @@ export default function Home() {
               </Box>
             </Box>
 
-            <Box className="feature-item-secondary">
+            <Box className="feature-item-about">
               <Typography variant="h5" sx={{ mb: "1rem" }}>
-                About
+                About the Citizen Historian Sourcebook
               </Typography>
               <Typography variant="body1">
                 History is not just found in textbooks, archives, and museums.

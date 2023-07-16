@@ -47,9 +47,7 @@ function Footer() {
             }}
           >
             <Box mr={4} mb={2}>
-              <Typography sx={{ fontWeight: "bold" }}>
-                NEW ENGLAND JOURNAL OF HISTORY
-              </Typography>
+              <Typography sx={{ fontWeight: "bold" }}>NEJH</Typography>
 
               <Typography>About Us</Typography>
               <Typography>Submissions</Typography>
@@ -83,7 +81,7 @@ function Footer() {
 
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Typography sx={{ fontFamily: "Palantino" }}>
-              Copyright 2022 New England Journal of History
+              Copyright 2023 The New England Journal of History
             </Typography>
           </Box>
         </Box>

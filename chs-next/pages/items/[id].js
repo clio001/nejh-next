@@ -169,6 +169,7 @@ function SingleItem({ doc }) {
                     sx={{
                       display: "block",
                       mt: "2rem",
+                      wordWrap: "break-word",
                     }}
                   >
                     {doc.readings.map((item, i) => {

@@ -51,6 +51,8 @@ function SingleItem({ doc }) {
         <Box className="page-container">
           <Box className="item-container">
             <img src={doc.imageUrl} className="item-image" />
+            <br></br>
+            <Typography variant="overline">{doc.theme[0]}</Typography>
 
             <Typography variant="h4">{doc.title}</Typography>
             <Typography>
@@ -152,7 +154,9 @@ function SingleItem({ doc }) {
                       <ContentCopyIcon color="primary" fontSize="small" />
                     </Button>
                   </Box>
-                  <Typography>{doc.citation}</Typography>
+                  <Typography sx={{ wordWrap: "break-word" }}>
+                    {doc.citation}
+                  </Typography>
                 </Box>
                 <Box mb={2} mt={4}>
                   <Divider>

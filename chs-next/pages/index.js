@@ -77,7 +77,7 @@ export default function Home() {
             <Box className="theme-list-items">
               {doc.map((item, i) => {
                 return (
-                  <Box className="list-item-backyard">
+                  <Box className="list-item-backyard" key={i}>
                     <Box
                       className="list-item-backyard-image"
                       key={i}
@@ -114,7 +114,7 @@ export default function Home() {
             <Box className="theme-list-items">
               {backyard.map((backyard, i) => {
                 return (
-                  <Box className="list-item-backyard">
+                  <Box className="list-item-backyard" key={i}>
                     <Box
                       className="list-item-backyard-image"
                       key={i}
@@ -145,7 +145,7 @@ export default function Home() {
             <Box className="theme-list-items">
               {blogs.map((blog, i) => {
                 return (
-                  <Box className="list-item-backyard">
+                  <Box className="list-item-backyard" key={i}>
                     <Box
                       className="list-item-backyard-image"
                       key={i}
@@ -178,7 +178,7 @@ export default function Home() {
             <Box className="theme-list-items">
               {articles.map((article, i) => {
                 return (
-                  <Box className="list-item-backyard">
+                  <Box className="list-item-backyard" key={i}>
                     <Box
                       className="list-item-backyard-image"
                       key={i}

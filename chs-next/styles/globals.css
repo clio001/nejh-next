@@ -194,6 +194,18 @@ body {
   transition: ease-in-out 0.1s;
 }
 
+.list-item-backyard {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  transition: ease-in-out 0.1s;
+}
+
+.list-item-backyard:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
 .list-item-backyard-image {
   display: flex;
   align-items: flex-end;
@@ -214,6 +226,7 @@ body {
   background-color: #fff;
   border-radius: 0 0 10px 10px;
   width: 300px;
+  padding-bottom: 1rem;
 }
 
 .list-item:hover {

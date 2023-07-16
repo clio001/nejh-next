@@ -76,14 +76,32 @@ export default function Home() {
             <Box className="theme-list-items">
               {doc.map((item, i) => {
                 return (
-                  <Link href={`/items/${item.id}`} key={i}>
-                    <a>
-                      <Box
-                        className="list-item"
-                        sx={{ backgroundImage: `url(${item.imageUrl})` }}
-                      />
-                    </a>
-                  </Link>
+                  <Box className="list-item-backyard">
+                    <Box
+                      className="list-item-backyard-image"
+                      key={i}
+                      sx={{
+                        backgroundImage: `url(${item.imageUrl})`,
+                      }}
+                      onClick={() => router.push(`url("/items/${item.id}")`)}
+                    ></Box>{" "}
+                    <Box className="list-item-backyard-text">
+                      <Typography variant="overline" color="darkgrey">
+                        {item.theme[0]}
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {item.title}
+                      </Typography>
+                      <Typography variant="body1">
+                        {item.creator}, {item.place} ({item.year})
+                      </Typography>
+                    </Box>
+                  </Box>
                 );
               })}
             </Box>
@@ -95,13 +113,7 @@ export default function Home() {
             <Box className="theme-list-items">
               {backyard.map((backyard, i) => {
                 return (
-                  <Box
-                    sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      margin: "0.5rem",
-                    }}
-                  >
+                  <Box className="list-item-backyard">
                     <Box
                       className="list-item-backyard-image"
                       key={i}
@@ -111,7 +123,14 @@ export default function Home() {
                       onClick={() => router.push(backyard.blogUrl)}
                     ></Box>{" "}
                     <Box className="list-item-backyard-text">
-                      <Typography variant="body1">{backyard.title}</Typography>
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {backyard.title}
+                      </Typography>
                     </Box>
                   </Box>
                 );
@@ -125,13 +144,7 @@ export default function Home() {
             <Box className="theme-list-items">
               {blogs.map((blog, i) => {
                 return (
-                  <Box
-                    sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      margin: "0.5rem",
-                    }}
-                  >
+                  <Box className="list-item-backyard">
                     <Box
                       className="list-item-backyard-image"
                       key={i}
@@ -141,7 +154,13 @@ export default function Home() {
                       onClick={() => router.push(blog.blogUrl)}
                     ></Box>{" "}
                     <Box className="list-item-backyard-text">
-                      <Typography>{blog.title}</Typography>
+                      <Typography
+                        sx={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {blog.title}
+                      </Typography>
                       <Typography>by {blog.author}</Typography>
                     </Box>
                   </Box>
@@ -158,28 +177,32 @@ export default function Home() {
             <Box className="theme-list-items">
               {articles.map((article, i) => {
                 return (
-                  <Box
-                    className="list-item"
-                    key={i}
-                    sx={{
-                      background:
-                        "linear-gradient(90deg, rgba(254,247,222,1) 0%, rgba(255,255,255,1) 85%, rgba(145,166,141,1) 100%)",
-                    }}
-                  >
-                    <Typography
-                      className="link-decoration"
+                  <Box className="list-item-backyard">
+                    <Box
+                      className="list-item-backyard-image"
+                      key={i}
                       sx={{
-                        fontWeight: "bold",
+                        backgroundImage: `url("https://static.wixstatic.com/media/725a03_3cca33fbdbf7416ba3fe58c47e447873~mv2.png/v1/fill/w_415,h_537,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Vol%2076%2C%20No%202%2C%20SP2020.png")`,
                       }}
-                      onClick={() => router.push(article.articleUrl)}
-                    >
-                      {article.title}
-                    </Typography>
+                      onClick={() => router.push(article.blogUrl)}
+                    ></Box>{" "}
+                    <Box className="list-item-backyard-text">
+                      <Typography
+                        className="link-decoration"
+                        sx={{
+                          fontWeight: "bold",
+                        }}
+                        onClick={() => router.push(article.articleUrl)}
+                      >
+                        {article.title}
+                      </Typography>
 
-                    <Typography>
-                      {article.author}, {article.journal}, Vol. {article.volume}
-                      , Issue {article.issue}, {article.year}, {article.pages}
-                    </Typography>
+                      <Typography>
+                        {article.author}, {article.journal}, Vol.{" "}
+                        {article.volume}, Issue {article.issue}, {article.year},{" "}
+                        {article.pages}
+                      </Typography>
+                    </Box>
                   </Box>
                 );
               })}

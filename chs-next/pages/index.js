@@ -14,6 +14,7 @@ import { Router } from "next/router";
 export default function Home() {
   const { first, second, third } = useContext(uiContext);
   const router = useRouter();
+
   return (
     <>
       <Navbar />
@@ -22,9 +23,9 @@ export default function Home() {
         {" "}
         <Box className="page-container-index">
           <Box className="feature-container">
-            <Box className="feature-item-primary">
+            <Box className="feature-item">
               <Box
-                className="feature-first"
+                className="feature-image"
                 sx={{
                   backgroundImage: `url(${doc[3].imageUrl})`,
                 }}
@@ -83,7 +84,7 @@ export default function Home() {
                       sx={{
                         backgroundImage: `url(${item.imageUrl})`,
                       }}
-                      onClick={() => router.push(`url("/items/${item.id}")`)}
+                      onClick={() => router.push(`/items/${item.id}`)}
                     ></Box>{" "}
                     <Box className="list-item-backyard-text">
                       <Typography variant="overline" color="darkgrey">

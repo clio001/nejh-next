@@ -29,6 +29,7 @@ export default function Home() {
                 sx={{
                   backgroundImage: `url(${doc[3].imageUrl})`,
                 }}
+                onClick={() => router.push(`/items/${doc[3].id}`)}
               >
                 {" "}
               </Box>

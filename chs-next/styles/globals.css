@@ -114,6 +114,7 @@ body {
   width: 42vw;
   height: 50vh;
   margin-right: 2rem;
+  transition: ease-in-out 0.1s;
 }
 
 .feature-image {
@@ -124,8 +125,9 @@ body {
   transition: ease-in-out 0.2s;
 }
 
-.feature-item-primary:hover {
+.feature-item:hover {
   scale: 1.05;
+  cursor: pointer;
 }
 
 .feature-item-about {

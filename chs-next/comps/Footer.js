@@ -18,23 +18,24 @@ function Footer() {
           <Box
             sx={{
               display: "flex",
-              flexDirection: "column",
+              flexDirection: "row",
               flexWrap: "wrap",
+
               alignItems: "center",
             }}
           >
-            <Box mb={1}>
+            <Box m={1}>
               <img
                 src="https://static.wixstatic.com/media/725a03_ded6918b49a34c3989198013a2dcdae8~mv2.png"
                 alt="Logo of the New England Teachers Union"
-                width="100%"
+                height="75px"
               />
             </Box>
-            <Box>
+            <Box m={1}>
               <img
                 src="https://static.wixstatic.com/media/725a03_0bec81e72f6c4e96a8591424b24f9a16~mv2.png"
                 alt="Logo of Dean College"
-                width="50%"
+                height="75px"
               />
             </Box>
           </Box>

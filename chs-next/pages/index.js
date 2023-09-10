@@ -51,23 +51,11 @@ export default function Home() {
 
             <Box className="feature-item-about">
               <Typography variant="h5" sx={{ mb: "1rem" }}>
-                About the Citizen Historian Sourcebook
+                About
               </Typography>
               <Typography variant="body1">
-                History is not just found in textbooks, archives, and museums.
-                It is all around us. Every day we pass through historical
-                spaces, some that are clearly marked and some that are not so
-                obvious. This public history series, co-created by David Brandon
-                Dennis and R.A. Lawson and hosted by the New England Journal of
-                History aims to enlist citizen historians to harness the power
-                of local community to capture history in their proverbial
-                backyards. You need not be a professional historian to
-                participate! With a bit of research, a video camera, and passion
-                for local history, you too can join us. We invite submissions
-                (see Call of Videos below) from the public. Submissions will be
-                reviewed and vetted by NEJH editors. We look forward to hearing
-                from you. Meanwhile co-creators Dennis and Lawson will kick off
-                the series with episodes from our own backyards!{" "}
+                The Citizen Historian Sourcebook is a digital history initiative
+                by the New England Journal of History and Dean College.
               </Typography>
             </Box>
           </Box>

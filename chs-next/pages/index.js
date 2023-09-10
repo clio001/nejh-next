@@ -1,6 +1,6 @@
 import { Typography, Grid, Box, Modal } from "@mui/material";
 import Footer from "../comps/Footer";
-import Navbar from "../comps/Navbar";
+import Navi from "../comps/Navbar";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import doc from "./items/docs.json" assert { type: "json" };
@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      <Navi />
 
       <Grid container className="grid-container">
         {" "}
@@ -41,6 +41,7 @@ export default function Home() {
                   opacity: "0.7",
                   borderRadius: "0 0 10px 10px",
                   minWidth: "288px",
+                  zIndex: "-10",
                 }}
               >
                 <Typography>
@@ -50,12 +51,47 @@ export default function Home() {
             </Box>
 
             <Box className="feature-item-about">
-              <Typography variant="h5" sx={{ mb: "1rem" }}>
-                About
+              <Box
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItems: "baseline",
+                }}
+                mt={1}
+              >
+                {" "}
+                <Typography
+                  variant="h5"
+                  sx={{ mb: "1rem", alignContent: "center" }}
+                >
+                  About
+                </Typography>
+                <img
+                  src="https://static.wixstatic.com/media/725a03_0bec81e72f6c4e96a8591424b24f9a16~mv2.png"
+                  alt="Logo of Dean College"
+                  height="75px"
+                />{" "}
+              </Box>{" "}
+              <Typography variant="body1" mt={1} sx={{ textAlign: "justify" }}>
+                The Citizen Historian Sourcebook is a plattform for primary
+                source documents and learning resources across a range of
+                humanities fields and historical periods. In addition to a
+                selection of source material, the CHS enables researchers,
+                teachers, and students to deepen their understanding of
+                historical topics. Editorial notes and further reading
+                recommendations contextualize documents and connect researchers
+                with current literature in the field.
               </Typography>
-              <Typography variant="body1">
-                The Citizen Historian Sourcebook is a digital history initiative
-                by the New England Journal of History and Dean College.
+              <Typography
+                variant="body1"
+                mt={1}
+                mb={1}
+                sx={{ textAlign: "justify" }}
+              >
+                {" "}
+                The CHS is a digital history initiative by the New England
+                Journal of History and Dean College.
               </Typography>
             </Box>
           </Box>

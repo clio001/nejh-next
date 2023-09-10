@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material";
 import { UIContextProvider } from "../context/uiContext";
 import "../styles/globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyApp({ Component, pageProps }) {
   const theme = createTheme({

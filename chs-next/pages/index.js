@@ -29,6 +29,7 @@ export default function Home() {
               flexDirection: "row",
               flexWrap: "wrap",
               marginTop: "-1.5rem",
+              alignItems: "center",
             }}
           >
             <Box className="feature-item">
@@ -57,7 +58,7 @@ export default function Home() {
                 </Typography>
               </Box>
             </Box>
-            <Box mt={1} sx={{ maxWidth: "30%", minWidth: "325px" }}>
+            <Box sx={{ maxWidth: "30%", minWidth: "310px" }}>
               {" "}
               <Typography
                 variant="h5"
@@ -65,7 +66,7 @@ export default function Home() {
               >
                 About
               </Typography>
-              <Typography variant="body1" mt={1}>
+              <Typography variant="body1" mt={1} sx={{ textAlign: "justify" }}>
                 The Citizen Historian Sourcebook is a plattform for primary
                 source documents and learning resources across a range of
                 humanities fields and historical periods. In addition to a

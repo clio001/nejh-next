@@ -28,6 +28,7 @@ export default function Home() {
               display: "flex",
               flexDirection: "row",
               flexWrap: "wrap",
+              marginTop: "-1.5rem",
             }}
           >
             <Box className="feature-item">

@@ -132,7 +132,8 @@ body {
 }
 
 .feature-item-about {
-  height: 50vh;
+  min-height: 50vh;
+  max-height: fit-content;
   max-width: 30%;
   min-width: 300px;
   display: flex;

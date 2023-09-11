@@ -18,10 +18,21 @@ function Navi() {
             style={{ display: "flex", flexDirection: "row" }}
           >
             <img
+              src="https://static.wixstatic.com/media/725a03_0bec81e72f6c4e96a8591424b24f9a16~mv2.png"
+              alt="Logo of Dean College"
+              height="80rem"
+              style={{ marginTop: "0.4rem" }}
+              onClick={() => router.push(`http://www.dean.edu`)}
+            />{" "}
+            <img
               src="https://static.wixstatic.com/media/725a03_e741d97a0fa64d699b1ee3166ef58aeb.jpeg"
               alt="Logo of the New England Journal of History"
               height="80rem"
-              style={{ marginTop: "0.4rem", marginRight: "1rem" }}
+              style={{
+                marginTop: "0.4rem",
+                marginRight: "1rem",
+                marginLeft: "0.5rem",
+              }}
             />
             <Box>
               CITIZEN

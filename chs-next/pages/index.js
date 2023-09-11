@@ -60,11 +60,11 @@ export default function Home() {
               {" "}
               <Typography
                 variant="h5"
-                sx={{ mb: "1rem", alignContent: "center" }}
+                sx={{ mt: "1rem", mb: "1rem", alignContent: "center" }}
               >
                 About
               </Typography>
-              <Typography variant="body1" mt={1} sx={{ textAlign: "justify" }}>
+              <Typography variant="body1" mt={1}>
                 The Citizen Historian Sourcebook is a plattform for primary
                 source documents and learning resources across a range of
                 humanities fields and historical periods. In addition to a

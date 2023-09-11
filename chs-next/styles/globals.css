@@ -113,7 +113,8 @@ body {
 
 .feature-item {
   width: 60%;
-  height: 50vh;
+  min-height: 50vh;
+
   margin-right: 2rem;
   transition: ease-in-out 0.1s;
 }
@@ -128,7 +129,7 @@ body {
 }
 
 .feature-item:hover {
-  scale: 1.05;
+  scale: 1.03;
   cursor: pointer;
 }
 

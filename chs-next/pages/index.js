@@ -22,7 +22,14 @@ export default function Home() {
       <Grid container className="grid-container">
         {" "}
         <Box className="page-container-index">
-          <Box className="feature-container">
+          <Box
+            className="theme-container"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+            }}
+          >
             <Box className="feature-item">
               <Box
                 className="feature-image"
@@ -49,25 +56,14 @@ export default function Home() {
                 </Typography>
               </Box>
             </Box>
-
-            <Box className="feature-item-about">
-              <Box
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  alignItems: "baseline",
-                }}
-                mt={1}
+            <Box mt={1} sx={{ maxWidth: "30%", minWidth: "325px" }}>
+              {" "}
+              <Typography
+                variant="h5"
+                sx={{ mb: "1rem", alignContent: "center" }}
               >
-                {" "}
-                <Typography
-                  variant="h5"
-                  sx={{ mb: "1rem", alignContent: "center" }}
-                >
-                  About
-                </Typography>
-              </Box>{" "}
+                About
+              </Typography>
               <Typography variant="body1" mt={1} sx={{ textAlign: "justify" }}>
                 The Citizen Historian Sourcebook is a plattform for primary
                 source documents and learning resources across a range of
@@ -88,9 +84,9 @@ export default function Home() {
                 The CHS is a digital history initiative by the New England
                 Journal of History and Dean College.
               </Typography>
-            </Box>
+            </Box>{" "}
           </Box>
-        </Box>
+        </Box>{" "}
         <Box className="theme-container">
           <Box className="theme-list">
             <Typography variant="h5">Primary Source Documents</Typography>

@@ -67,11 +67,6 @@ export default function Home() {
                 >
                   About
                 </Typography>
-                <img
-                  src="https://static.wixstatic.com/media/725a03_0bec81e72f6c4e96a8591424b24f9a16~mv2.png"
-                  alt="Logo of Dean College"
-                  height="75px"
-                />{" "}
               </Box>{" "}
               <Typography variant="body1" mt={1} sx={{ textAlign: "justify" }}>
                 The Citizen Historian Sourcebook is a plattform for primary

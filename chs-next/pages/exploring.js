@@ -296,7 +296,7 @@ function Exploring() {
                 </Typography>
               </Box>
               <img
-                src="https://static.wixstatic.com/media/a4a1fc_210e681666d94b0f90ae5e3acca98c81~mv2.pngcd ch"
+                src="https://static.wixstatic.com/media/a4a1fc_210e681666d94b0f90ae5e3acca98c81~mv2.png"
                 width="75%"
               />
             </Box>

@@ -33,14 +33,13 @@ export default function Home() {
             }}
           >
             <Box className="feature-item">
-              <Box
-                className="feature-image"
-                sx={{
-                  backgroundImage: `url(${doc[3].imageUrl})`,
-                }}
-                onClick={() => router.push(`/items/${doc[3].id}`)}
-              >
+              <Box className="feature-image">
                 {" "}
+                <img
+                  src="/mee_british empire_final.png"
+                  width="100%"
+                  onClick={() => router.push(`/items/${doc[3].id}`)}
+                />
               </Box>
               <Box
                 sx={{

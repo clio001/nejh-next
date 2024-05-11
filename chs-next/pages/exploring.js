@@ -34,13 +34,7 @@ function Exploring() {
         <Box className={styles.container}>
           <Box className={styles.container_header}>
             <Box>
-              <Typography variant="h2" mt={5}>
-                British Empire for Children:
-              </Typography>
-              <Typography variant="h4">
-                Colonialism through the Lens of Arthur Mee’s The Children’s
-                Encyclopaedia, 1908-1913{" "}
-              </Typography>
+              <img src="/mee_british empire_final.png" width="100%" />
             </Box>
             <Box className={styles.container_headerButtons}>
               <Button
@@ -74,10 +68,7 @@ function Exploring() {
               </Typography>
             </Divider>{" "}
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <Typography
-                sx={{ maxWidth: "70%", textAlign: "justify" }}
-                mt={1.5}
-              >
+              <Typography sx={{ maxWidth: "70%", textAlign: "justify" }} mt={5}>
                 The exhibition, “British Empire for Children,” features ten
                 excerpts from entries published in The Children’s Encyclopaedia
                 (or one of its other titles) between 1908 and 1913. The entries
@@ -166,7 +157,7 @@ function Exploring() {
                   childhood figure for generations of children in the
                   English-speaking world.
                 </Typography>
-                <Typography>
+                <Typography mb={7}>
                   <i>
                     by David Brandon Dennis and John Woitkowitz, Series Editors
                   </i>
@@ -174,21 +165,22 @@ function Exploring() {
               </Box>
             </Box>
           </Box>
-          <Box className={styles.container_docs}>
+          <Box className={styles.container_docs} mb={10}>
             <Divider>
-              <Typography variant="h4" id="sources" mb={1.5}>
+              <Typography variant="h4" id="sources" mb={5}>
                 Sources & Metadata
               </Typography>
             </Divider>
             {data.map((item, i) => {
               return (
                 <Box className={styles.container_doc} key={i}>
-                  <Box>
-                    <img
-                      src={item.teiHeader.publicationStmt.pointer}
-                      height="500"
-                    />
-                  </Box>{" "}
+                  <Box
+                    sx={{
+                      backgroundImage: `url(${item.teiHeader.publicationStmt.pointer})`,
+                      width: "25vw",
+                      backgroundSize: "cover",
+                    }}
+                  ></Box>{" "}
                   <Box className={styles.doc_description}>
                     <Typography variant="h5" mb={1}>
                       {item.teiHeader.sourceDesc.biblFull.title}
@@ -276,6 +268,32 @@ function Exploring() {
                 About
               </Typography>
             </Divider>{" "}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                marginBottom: "5rem",
+              }}
+            >
+              <Box sx={{ maxWidth: "70%", textAlign: "justify" }} mt={1} mb={5}>
+                <Typography mt={1.5} mb={2}>
+                  The “Exploring History and Digital Methods”-initiative aims to
+                  connect Dean College’s vibrant history student body with the
+                  Staatsbibliothek zu Berlin’s (Stabi) unique historical
+                  collections and expertise in digital methods and historical
+                  research. Specifically the Stabi’s historical collections and
+                  their relationship to histories of colonialism, as identified
+                  by IN_CONTEXT, are important sources for the study of the past
+                  and are readily accessible via the Stabi’s Digitized
+                  Collections. Dean College’s Digital History curriculum is an
+                  excellent format to bring students in contact with these
+                  collections and to explore novel methods in critical digital
+                  history analysis.
+                </Typography>
+              </Box>
+              <img src="/dean-sbb-in_context-logo.png" width="75%" />
+            </Box>
           </Box>
         </Box>
 

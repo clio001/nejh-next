@@ -34,7 +34,10 @@ function Exploring() {
         <Box className={styles.container}>
           <Box className={styles.container_header}>
             <Box>
-              <img src="/mee_british empire_final.png" width="100%" />
+              <img
+                src="https://static.wixstatic.com/media/a4a1fc_b32c665ca2ac45ecbba8a5865ba2a1f7~mv2.png"
+                width="100%"
+              />
             </Box>
             <Box className={styles.container_headerButtons}>
               <Button
@@ -292,7 +295,10 @@ function Exploring() {
                   history analysis.
                 </Typography>
               </Box>
-              <img src="/dean-sbb-in_context-logo.png" width="75%" />
+              <img
+                src="https://static.wixstatic.com/media/a4a1fc_210e681666d94b0f90ae5e3acca98c81~mv2.pngcd ch"
+                width="75%"
+              />
             </Box>
           </Box>
         </Box>

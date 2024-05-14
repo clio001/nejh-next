@@ -178,9 +178,10 @@ function Exploring() {
               return (
                 <Box className={styles.container_doc} key={i}>
                   <Box
+                    className={styles.doc_image}
                     sx={{
                       backgroundImage: `url(${item.teiHeader.publicationStmt.pointer})`,
-                      width: "25vw",
+                      width: "20vw",
                       backgroundSize: "cover",
                     }}
                   ></Box>{" "}
@@ -193,8 +194,28 @@ function Exploring() {
                       {item.teiHeader.notesStmt.noteEditorial.name} (
                       {item.teiHeader.notesStmt.noteEditorial.date})
                     </Typography>
-                    <Table size="small">
-                      <TableBody>
+                    <Box className={styles.doc_buttons}>
+                      <Button
+                        className={styles.doc_singleButton}
+                        variant="outlined"
+                      >
+                        Editorial Note
+                      </Button>
+                      <Button
+                        className={styles.doc_singleButton}
+                        variant="outlined"
+                      >
+                        Further Reading
+                      </Button>
+                      <Button
+                        className={styles.doc_singleButton}
+                        variant="outlined"
+                      >
+                        TEI/XML
+                      </Button>
+                    </Box>
+                    <Table className={styles.tableContainer} size="small">
+                      <TableBody className={styles.tableBody}>
                         <TableRow>
                           <TableCell>Series title:</TableCell>
                           <TableCell>
@@ -210,9 +231,11 @@ function Exploring() {
                           </TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell>Date:</TableCell>
+                          <TableCell>Published:</TableCell>
                           <TableCell>
-                            {item.teiHeader.sourceDesc.biblFull.date}
+                            {item.teiHeader.sourceDesc.biblFull.place}:{" "}
+                            {item.teiHeader.sourceDesc.biblFull.publisher} (
+                            {item.teiHeader.sourceDesc.biblFull.date})
                           </TableCell>
                         </TableRow>
                         <TableRow>
@@ -227,7 +250,7 @@ function Exploring() {
                         </TableRow>
 
                         <TableRow>
-                          <TableCell>Digitized source:</TableCell>
+                          <TableCell>Data provider:</TableCell>
                           <TableCell>
                             {item.teiHeader.publicationStmt.publisher}
                           </TableCell>
@@ -240,26 +263,6 @@ function Exploring() {
                         </TableRow>
                       </TableBody>
                     </Table>
-                    <Box className={styles.doc_buttons}>
-                      <Button
-                        className={styles.doc_singleButton}
-                        variant="outlined"
-                      >
-                        View
-                      </Button>
-                      <Button
-                        className={styles.doc_singleButton}
-                        variant="outlined"
-                      >
-                        TEI/XML
-                      </Button>
-                      <Button
-                        className={styles.doc_singleButton}
-                        variant="outlined"
-                      >
-                        Image
-                      </Button>
-                    </Box>
                   </Box>
                 </Box>
               );
